@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="main-body">
+	<form th:object="${helloMsg}" th:action="@{/hello}" method="post">
+		<table>
+			<tr><td>姓名：<input type="text" th:field="*{name}"></td></tr>
+			<tr><td>消息：<input type="text" th:field="*{msg}"></td></tr>
+			<tr><td><button type="submit">提交</button></td></tr>
+		</table>
+	</form>
+</div>
+</body>
+</html>

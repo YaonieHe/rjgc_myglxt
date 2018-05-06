@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+</head>
+<body>
+<div th:fragment="main-body">
+		<table th:object="${helloMsg}">
+			<tr><td th:inline="text">姓名：[[*{name}]]</td></tr>
+			<tr><td th:inline="text">消息：[[*{msg}]]</td></tr>
+		</table>
+</div>
+</body>
+</html>
